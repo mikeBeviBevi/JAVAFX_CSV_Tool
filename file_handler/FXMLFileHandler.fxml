@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="borderPane" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.faa.cab.util.FX.file_handler.FXMLFileHandlerController">
+  <stylesheets>
+    <URL value="@fxmlFileHandler.css" />
+  </stylesheets>
+   <top>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="inFile" mnemonicParsing="false" onAction="#handleInFileMenuItem" text="Choose Input File" />
+                  <MenuItem fx:id="outFile" mnemonicParsing="false" text="Choose Output File" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane id="mainPane" prefHeight="458.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="14.0" layoutY="6.0" prefHeight="185.0" prefWidth="580.0" />
+         </children></Pane>
+   </center>
+</BorderPane>
